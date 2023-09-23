@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <meta name="google-site-verification" content="DTRnTp5KTjSex9twubOFi52znkBdcKNMeAl9KQAbJAc" />
+    <title>Металбуд Україна</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="./img/icon-logo.ico" type="image/icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header class="header content">
+        <nav class="menu">
+            <a class="logo-img" href="./index.html"> <img src="./img/logo-mbu.svg" alt="logo" width="100"> </a>
+            <ul class="menu-list list">
+                <li class="menu-item">
+                    <a class="logo" href="./index.html">
+                        МЕТАЛБУД УКРАЇНА
+                    </a>
+                </li>
+                <li class="menu-item menu-item-order">
+                    <a class="header-form" href="./form.html">Замовити</a>
+                </li>
+            </ul>
+            <ul class="menu-list list menu-list-contacts">
+                <li class="menu-item">
+                    <h2 class="menu-header-link menu-header-link-top">Контакти</h2>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-link  menu-list-contacts-left" href="tel:+380678944344">067-894-43-44</a>
+                    <a class="tn-atom" href="viber://chat?number=%2B380678944344" target="_blank">
+                        <img class="menu-item-icon" src="./img/free-icon-viber.svg" alt="viber" width="20"
+                            title="Відкрити Viber">
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-link" href="tel:+380679644544">067-964-45-44</a>
+                    <a class="tn-atom" href="https://t.me/DmytroMBU" target="_blank" rel="noopener"> <img
+                            class="tn-atom__img t-img loaded  menu-item-icon" title="Відкрити Telegram"
+                            data-original="https://static.tildacdn.com/tild3463-6564-4731-b435-333030363865/Telegram_Messenger.png"
+                            imgfield="tn_img_1613472631049"
+                            src="https://thumb.tildacdn.com/tild3463-6564-4731-b435-333030363865/-/resize/44x/-/format/webp/Telegram_Messenger.png"
+                            width="20" height="20">
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-link" title="Написати листа" href="mailto:metalbudukraine@gmail.com"
+                        target="_blank">metalbudukraine@gmail.com</a>
+                </li>
+            </ul>
+            <ul class="menu-list list">
+                <li class="menu-item">
+                    <h2 class="menu-header-link">Графік роботи</h2>
+                </li>
+                <li class="menu-item">
+                    <img class="work-time-img" src="./img/icon-working-hours.svg" alt="work schedule" width="30">
+                </li>
+                <li class="menu-item">
+                    <ul class="list">
+                        <li>
+                            <p>Пн - Пт: 9:00 - 17:00</p>
+                        </li>
+                        <li>
+                            <p class="menu-item-post-text-padding">Сб - Нд: Вихідні</p>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="content">
+        <!-- description -->
+        <section class="description">
+            <div class="description-wrapper">
+                <div class="container description-item">
+                    <div class="content-form">
+                        <div class="right-side">
+                            <div class="topic-text">Дізнатись ціну або відправити замовлення</div>
+                            <!-- <p>
+                            Якщо у вас є якісь питання або пропозиції щодо співпраці - заповніть форму нижче
+                        </p> -->
+                            <form action="send_mail.php" name="form" method="POST" class="form-action-send-mail"
+                                enctype="multipart/form-data">
+                                <div class="input-box">
+                                    <input type="text" placeholder="Ваше і'мя" name="name" id="name" />
+                                    <br>
+                                    <!-- <label for="name">Лише літери</label> -->
+                                </div>
+                                <div class="input-box">
+                                    <input type="text" placeholder="Введіть email" name="emailclient"
+                                        id="emailclient" />
+                                    <br>
+                                    <!-- <label for="emailclient">У форматі: name@email.com</label> -->
+                                </div>
+                                <div class="input-box input-box-hidden">
+                                    <input hidden type="text" name="email" id="email"
+                                        value="site@metalbudukraine.com.ua" />
+                                </div>
+                                <div class="input-box input-box-phone">
+                                    <label for="phone"><span class="form-tel-label-color">*</span></label>
+                                    <input type="tel" placeholder="Введіть телефон" name="phone" id="phone" required />
+                                    <!-- type="text" -->
+                                    <!-- <br> -->
+                                    <!-- <label for="phone"><span class="form-tel-label-color">*</span></label> -->
+                                </div>
+                                <div class="input-box message-box">
+                                    <textarea placeholder="Написати замовлення" name="message"></textarea>
+                                </div>
+                                <div class="input-checkbox">
+                                    <input id="checkbox" type="checkbox" name="checkbox" checked>
+                                    <label for="html">Згодний на отримання рекламної розсилки</label>
+                                </div>
+                                <div class="button-location">
+                                    <div class="button-file">
+                                        <!-- <div class="input__wrapper">
+                                    <input name="file" type="file" id="file" class="input input__file" multiple>
+                                    <label for="file" class="input__file-button">
+                                       <span class="input__file-icon-wrapper"><img class="input__file-icon" src="./img/paper-clip.png" alt="Файл" width="25"></span>
+                                       <span class="input__file-button-text">Файл</span>
+                                    </label>
+                                 </div> -->
+                                    </div>
+                                    <div class="button">
+                                        <input type="submit" id="button" value="Відправити" />
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <article class="list-services-section">
+                    <ul class="list-services">
+                        <li class="services-list-item">
+                            <p>чорний металопрокат</p>
+                        </li>
+                        <li>
+                            <p>нержавіючий металопрокат</p>
+                        </li>
+                        <li>
+                            <p>кольоровий металопрокат</p>
+                        </li>
+                        <li>
+                            <p>профнастил та металочерепиця</p>
+                        </li>
+                        <li>
+                            <p>деталі трубопроводів і запірна арматура</p>
+                        </li>
+                        <li>
+                            <p>спецсталі та інша продукція</p>
+                        </li>
+                        <li>
+                            <p>послуги</p>
+                        </li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <!-- peculiarities -->
+        <section class="peculiarities">
+            <h2 class="peculiarities-header">Особливостіи</h2>
+            <ul class="list peculiarities-list">
+                <li class="peculiarities-post">
+                    <h3 class="peculiarities-post-header">Професійна команда</h3>
+                    <p class="peculiarities-text">Команда професійних менеджерів, з багаторічним досвідом, які знають
+                        всі тонкощі і труднощі, з якими може зіткнуться клієнт.</p>
+                </li>
+                <li class="peculiarities-post">
+                    <h3 class="peculiarities-post-header">Прорахунок замовлення</h3>
+                    <p class="peculiarities-text">Наші фахівці допоможуть Вам порахувати необхідну кількість металу та
+                        допоможуть сформувати та оформити замовлення.</p>
+                </li>
+                <li class="peculiarities-post">
+                    <h3 class="peculiarities-post-header">Підготовка замовлення</h3>
+                    <p class="peculiarities-text">Робітники складу поріжуть метал швидко й точно в розмір та завантажать
+                        ваше замовлення на транспорт.</p>
+                </li>
+                <li class="peculiarities-post">
+                    <h3 class="peculiarities-post-header">Логістика</h3>
+                    <p class="peculiarities-text">Налагоджено партнерські угоди з логістичними компаніями, які вчасно та
+                        якісно доставлять вантаж в любу точку країни.</p>
+                </li>
+            </ul>
+        </section>
+
+        <!-- case  -->
+        <section class="case">
+            <h2 class="case-header">Наша продукція</h2>
+            <ul class="list case-list">
+                <li class="case-post">
+                    <img class="case-logo" src="./img/produkt2.jpg" alt="металопрокат" width="370" height="294">
+                </li>
+                <li class="case-post">
+                    <img class="case-logo" src="./img/produkt3.jpg" alt="металопрокат" width="370" height="294">
+                </li>
+                <li class="case-post">
+                    <img class="case-logo" src="./img/produkt1.jpg" alt="металопрокат" width="370" height="294">
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- footer  -->
+    <footer class="footer">
+        <!-- content -->
+        <div class="footer-position">
+            <div class="footer-container-position">
+                <a class="logo footer-logo-color" href="./index.html">металбуд україна</a>
+            </div>
+            <address class="footer-address">
+                <ul class="menu-list footer-menu-list list">
+                    <li class="menu-item">
+                        <a class="menu-link footer-link" href="tel:+380678944344">067-894-43-44</a>
+                        <a class="tn-atom" href="viber://chat?number=%2B380678944344" target="_blank">
+                            <img class="menu-item-icon" title="Відкрити Viber" src="./img/free-icon-viber.svg"
+                                alt="viber" width="20">
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="menu-link footer-link" href="tel:+380679644544">067-964-45-44</a>
+                        <a class="tn-atom" href="https://t.me/DmytroMBU" target="_blank" rel="noopener"> <img
+                                class="tn-atom__img t-img loaded menu-item-icon" title="Відкрити Telegram"
+                                data-original="https://static.tildacdn.com/tild3463-6564-4731-b435-333030363865/Telegram_Messenger.png"
+                                imgfield="tn_img_1613472631049"
+                                src="https://thumb.tildacdn.com/tild3463-6564-4731-b435-333030363865/-/resize/44x/-/format/webp/Telegram_Messenger.png"
+                                width="20" height="20">
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="menu-link footer-link" title="Написати листа" href="mailto:metalbudukraine@gmail.com"
+                            target="_blank">metalbudukraine@gmail.com</a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="menu-link footer-link" title="Test page" href="/testpage.html">_</a>
+                    </li>
+                </ul>
+            </address>
+        </div>
+    </footer>
+
+    <!-- <script
+        src="https://kit.fontawesome.com/fce9a50d02.js"
+        crossorigin="anonymous">
+    </script> -->
+    <script src="./app.js"></script>
+    <script>
+        let inputs = document.querySelectorAll('.input__file');
+        Array.prototype.forEach.call(inputs, function (input) {
+            let label = input.nextElementSibling,
+                labelVal = label.querySelector('.input__file-button-text').innerText;
+
+            input.addEventListener('change', function (e) {
+                let countFiles = '';
+                if (this.files && this.files.length >= 1)
+                    countFiles = this.files.length;
+
+                if (countFiles)
+                    label.querySelector('.input__file-button-text').innerText = 'Завантажено: ' + countFiles;
+                else
+                    label.querySelector('.input__file-button-text').innerText = labelVal;
+            });
+        });
+    </script>
+</body>
+
+</html>
