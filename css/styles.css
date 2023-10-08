@@ -15,16 +15,33 @@
 body {
     font-size: var(--primary-font-size);
     background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(19, 90, 254, 1) 100%);
+    height: 100%;
+}
+
+.wrap-height {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .content {
     width: 1170px;
     margin: 0 auto;
-    /* margin: auto; */
 }
 
 .height298 {
     height: calc(100vh - 298px);
+}
+
+.heightFormPage {
+    flex: 1 1 auto;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-main-height {
+    height: 65.8vh;
 }
 
 .formCentered {
@@ -33,7 +50,7 @@ body {
     justify-content: center;
     align-self: center;
 
-    height: 100%;
+    /* height: 100%; */
 }
 
 .list {
@@ -174,7 +191,7 @@ body {
 } */
 .menu-link {
     font-family: var(--primary-font);
-    font-size: 20px;
+    font-size: 28px;
     font-weight: var(--bold-font);
     text-decoration: none;
     color: var(--primary-color);
@@ -259,6 +276,7 @@ body {
 .description-wrapper {
     display: flex;
     flex-direction: row;
+    margin-top: 94px;
 
 }
 
@@ -281,66 +299,100 @@ body {
     margin: 15px;
 }
 
-/* .description-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    /* min-width: 1376px; */
-/* background-color: #2F303A;
+.notify-wrap {
+    position: relative;
+}
 
-} */
-/* .description-wrapper-page-form {
-    display: flex;
+.notify-box-success {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    /* display: flex; */
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    margin-left: 450px;
-    width: 1170px;
-} */
-/* .description-item {
+
+    background-color: rgba(2, 134, 19, 0.9);
+    border-radius: 10px;
+}
+
+.notify-box-success.active {
+    display: flex;
+}
+
+.notify-text-box-success {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    min-height: 600px;
     justify-content: center;
-    max-width: 585px;
-} */
-/* .description-header {
+    align-items: center;
+
+    padding: 48px;
+}
+
+.notify-title-success {
+    font-size: 40px;
+    font-weight: 700;
+    color: #fff;
+
+    padding-bottom: 48px;
+}
+
+.notify-text-success {
     text-align: center;
-    color: #FFFFFF;
-    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 500;
+    color: #fff
+}
 
-    font-family: var(--primary-font);
-    font-style: normal;
-    font-weight: var(--bolder-font);
-    font-size: 44px;
-    line-height: 1.37;
-        /* or 136% */
-/* letter-spacing: 0.06em;
+.notify-box-fail {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
 
-} */
-/* .description-button {
-    min-width: 200px;
-    height: 50px;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
 
-    font-family:var(--primary-font);
-    font-style: normal;
-    font-weight: var(--bold-font);
-    font-size: var(--secondary-font-size);
-    line-height: 1.88;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    border: none;
-    background-color:var(--accent-color);
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+}
 
+.notify-box-fail.active {
     display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    letter-spacing: 0.06em;
+}
 
-    color: #FFFFFF;
-} */
+.notify-text-box-fail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 48px;
+}
+
+.notify-title-fail {
+    font-size: 40px;
+    font-weight: 700;
+    color: #ff0000;
+
+    padding-bottom: 48px;
+}
+
+.notify-text-fail {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+    color: #047e00
+}
+
+.notify-phone-fail {
+    font-weight: 700;
+}
+
+
+
 .list-services-section {
     display: flex;
     align-items: center;
@@ -417,6 +469,7 @@ body {
 }
 
 /* case */
+
 .case {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -438,6 +491,19 @@ body {
     display: flex;
     justify-content: center;
     gap: 30px;
+}
+
+.case-post {
+    width: 370px;
+    height: 294px;
+}
+
+.case-img {
+    display: block;
+    height: 100%;
+    width: 100%;
+
+    object-fit: cover;
 }
 
 /* teams */
@@ -501,18 +567,10 @@ body {
 
 /* footer */
 .footer {
-    display: flex;
-    justify-content: center;
-    width: auto;
-    margin: 0 auto;
+    /* display: flex;
+    justify-content: center; */
 
-    background: #2F303A;
-
-
-    /* width: 1600px; */
-    /* width: 100%;
-    max-width: 1200px; */
-    /* padding-left: 215px; */
+    background-color: #2F303A;
 }
 
 
